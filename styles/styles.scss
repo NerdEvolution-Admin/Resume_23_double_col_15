@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --hovercolor: black;
+  --leftBgcolor:#202020;
+  --headerColor: #2a9270;
+  --fontColor: #3d3d3d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  color: #555;
+  background-image: linear-gradient(to bottom right, #20242e, #737f97);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.resume{
+  width: 8.5in;
+  height: 12in;
+  border-radius: 2px;
+  background: whitesmoke;
+  box-shadow: 13px 13px 20px #20242e,
+              -13px -13px 20px #60708f00;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+#leftSide{
+  width: 40%;
+  height: 12in;
+  background: linear-gradient(to top right, #202020 50%, #000000 50%);
+  display:inline-block;
+  color: whitesmoke;
+  padding-top: 25px;
+  text-align: center;
+}
+
+
+#rightSide{
+  width: 70%;
+  display:inline-block;
+  height: 12in;
+  background: #f9f9f9;
+  color: var(--fontColor);
+  padding-left: 35px;
+  padding-top: 25px;
+  padding-right: 35px;
+}
+
+/* ----------Common CSS Left side-------------- */
+.sectionGapLeft{
+  height: 15px;
+}
+.image{
+  width:  150px;
+  height: 150px;
+  margin-bottom: 25px;
+}
+
+.image img{
+  margin-left: calc(50% - 5px);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+
+.sectionHeader{
+  margin: 20px 70px 15px 70px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid var(--headerColor);
+}
+
+.aboutMe{
+  .descText{
+    color: whitesmoke;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    padding: 0px 15px;
+  }
+}
+
+
+.info, .skillItem{
+  margin-top: 15px;
+  .infoHeader{
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .infoDetails{
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  a{
+    color: whitesmoke ;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+    font-size: 15px;
+  }
+}
+
+/* ---------Common Css Right side---------- */
+.rightSectionGap{
+  height: 15px;
+}
+.rightSectionHeader{
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5px;
+  margin-right: 10px;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--leftBgcolor);
+}
+.descText{
+  color: var(--fontColor);
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+}
+
+.rightItem{
+  display: flex;
+  flex-direction: column;
+  list-style-position: outside;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;  
+  margin-top: 15px;
+  margin-bottom: 20px;
+
+  .post{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .time{
+    font-weight: 800;
+    font-size: 14px;
+    margin-top: 3.5px;
+    margin-bottom: 3.5px;
+    letter-spacing: 1.5px;
+    color: var(--headerColor);
+
+  }
+  .resp{
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+}
+
+/* -------------------leftHeader section ---------------- */
+.leftHeader{
+  margin-bottom: 25px;
+  .name{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+  }
+  .desig{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 5px 0px;
+    margin: 0px 20px;
+    border: 3px solid var(--headerColor);
+    border-radius: 5px;
+  }
+}
+
+
+
+/* ----------skills sectionn---------- */
+
+.skillItem{
+  .infoHeader{
+    font-weight: 400;
+    font-size: 15px;
+  }
+}
+.skillGraph{
+  height: 10px;
+  background: whitesmoke;
+  margin-right: 25px;
+  margin-top: 5px;
+}
+
+.softSkills{
+  .item2{
+    .skillGraph{
+      margin-right: 50px;
+    }
+  }
+  
+  .item3{
+    .skillGraph{
+      margin-right: 100px;
+    }
+  }
+}
+
+
+.techSkills{
+  .item1{
+    .skillGraph{
+      margin-right: 75px;
+    }
+  }
+  .item2{
+    .skillGraph{
+      margin-right: 25px;
+    }
+  }
+  .item3{
+    .skillGraph{
+      margin-right: 50px;
+    }
+  }
+}
+
+/* ---------------Languages section---------------- */
+
+
+.language{
+  text-align: center;
+  .item1{
+    .skillGraph{
+      margin-left: 35px;
+      margin-right: 35px;
+    }
+  }
+  .item2{
+    .skillGraph{
+      margin-right: 50px;
+      margin-left: 50px;
+    }
+  }
+
+}
+
+/* -----------------------SoftSkills-------------------- */
+.techSkills{
+
+  .skillCirc{
+    display: flex;
+    justify-content: space-around;
+    .skillItem{
+      display: inline-flex;
+      height: 90px;
+      width: 90px;
+      border-radius: 50%;
+      border: 8px solid #b6d8d1;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      p{
+        font-weight: 600;
+        font-size: 20px;
+      }
+    }
+
+
+    .skillItem:hover{
+      border: 8px solid #74cfb79f;
+      height: 95px;
+      width: 95px;
+      p{
+        font-weight: 800;
+      }
+    }
+  
+  }
+  
+
+
+ 
+  .skillItem1{
+    background: conic-gradient(from 0deg at 50%, #74cfb79f 90%,whitesmoke 10%);
+
+  }
+
+  .skillItem2{
+    background: conic-gradient(from 0deg at 50%, #74cfb79f 70%, whitesmoke 10%);
+  }
+  .skillItem3{
+    background: conic-gradient(from 0deg at 50%, #74cfb79f 40%, whitesmoke 10%);
+  }
+  .skillItem4{
+    background: conic-gradient(from 0deg at 50%, #74cfb79f 60%, whitesmoke 10%);
+  }
+  .skillItem5{
+    background: conic-gradient(from 0deg at 50%, #74cfb79f 80%, whitesmoke 10%);
+  }
+  .skillItem6{
+    background: conic-gradient(from 0deg at 50%, #74cfb79f 50%, whitesmoke 10%);
+  }
+}
+
+/* -------------------------Interests------------------- */
+
+.interests{
+
+  .interestItems{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    .row1, .row2{
+      display: flex;
+      .intItem{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 25px;
+        i{
+          color: var(--headerColor);
+        }
+        p{
+          margin-top: 10px;
+          font-size: 16px;
+          font-weight: 600;
+          letter-spacing: 0.5px;
+        }
+      }
+      .item4, .item5{
+        margin-left: 55px;
+      }
+      .item6{
+        margin-left: 55px;
+      }
+    }
+  }
+  
+}
+
+/* ------------------------------------------------------------------------------- */
+
+@media print {
+  html {
+    height: 11in;
+    width: 8.5in;
+    overflow: hidden;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .resume {
+    width: 100%;
+    box-shadow: none;
+  }
+}
